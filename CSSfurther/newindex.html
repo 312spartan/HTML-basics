@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model In Practice</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 3px dotted red;
+            margin: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            background-color: lightblue;
+        }
+
+        .card {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            border: black solid 1.5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            background-color: white;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .card h1 {
+            font-size: 1.5em;
+            margin: 0.5em 0;
+        }
+
+        .card h3 {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+
+        .card h6 {
+            font-size: 0.9em;
+            margin: 0.5em 0;
+            color: silver;
+        }
+
+        .box2 {
+            width: 376.5px;
+            height: 424.97px;
+            padding: 15px;
+            border: 2px solid lime;
+            margin: 20px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0,);
+            background-color: lavender;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2em;
+            text-align: center;
+            border-radius: 100px;
+
+        }
+
+        .circle {
+
+            display: block;
+            background-color: slateblue;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            background: radial-gradient(circle at 75px 75px, #5cabff, #000);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">This is a box!</div>
+    <div class="card">
+        <h1>John Salesman</h1>
+        <h3>Fry Cook</h3>
+        <h6>555 McDonalds Ave</h6>
+    </div>
+    <div class="box2">I'm a different box!</div>
+    <div class="circle">I'm a 3Dish circle!</div>
+</body>
+</html>

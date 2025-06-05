@@ -1,0 +1,43 @@
+article {
+    width: 60%;
+    margin: auto;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: slategray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0.1);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: lime;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    color: lavender;
+}
+
+.highlight2 {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: cornsilk;
+    font-weight: bold;
+}
+
+.quote::before {
+    content: '"';
+    font-size: 42px;
+    color: crimson;
+
+}
+
+.quote::after {
+    content: '"';
+    font-size: 21px;
+    color:aquamarine
+}
