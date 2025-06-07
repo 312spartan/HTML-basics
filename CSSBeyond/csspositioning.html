@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positioning</title>
+
+    <style>
+
+         .static { 
+
+            position: static;
+
+        }
+
+        .relative {
+
+            position: relative;
+         /* top: 20px; */
+            left: 40px;
+            z-index: 100;
+
+        }
+
+        .parent {
+            position: relative;
+            height: 1000px;
+            width: 300px;
+            background-color: lightblue;
+        }
+
+        .absolute {
+
+            position: absolute;
+            top: 65px;
+            left: 115px;
+            background-color: lightseagreen;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 13px;
+            right: 15px;
+            background-color: magenta;
+            
+        }
+
+        .sticky {
+
+            position: sticky;
+            top: 0;
+            background-color: lightcoral;
+            padding: 15.2px;
+        }
+
+        .box {
+
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+
+        .one{
+
+            background-color: lightgreen;
+            z-index: 1;
+
+        }
+
+        .two {
+
+            background-color: lime;
+            z-index: 15;
+            top: 50px;
+            left: 15px;
+
+        }
+
+    </style>
+</head>
+
+<!-- 
+
+Static: Normal flow, no positioning applied.
+Relative: Moved relative to its normal position.
+Absolute: Moves relative to the nearest positioned ancestor.
+Fixed: Stays fixed on the screen, even when scrolling.
+Sticky: Sticks in place when scolling past a point.
+
+-->
+
+<body>
+    <header class="sticky">I am sticky</header>
+    <p class="static">I am static</p> 
+    <div class="relative">I am relative</div>
+    <div class="fixed">I am fixed</div>
+
+    <div class="parent">
+        <div class="absolute">I am absolute</div>
+    </div>
+    <div class="box one">box one</div>
+    <div class="box two">box two</div>
+
+</body>
+</html>
