@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Praccy</title>
+    <style>
+        .grid-box{
+            display: grid;
+            background-color: orangered;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            grid-template-columns: 1fr 2fr 2fr 1fr;
+            gap: 20px;
+            /* grid-template-rows: 100px 100px; */
+        }
+
+        .griditem{
+            background-color: white;
+            color: crimson;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin: 10px;
+        }
+
+        .griditem:nth-child(2){
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        /* .griditem:nth-child(3){
+            grid-column: span 2;
+            grid-row: span 2;
+        } */
+
+    </style>
+</head>
+<body>
+   <div class="grid-box">
+    <div class="griditem">item 1</div>
+    <div class="griditem">item 2</div>
+    <div class="griditem">item 3</div>
+    <div class="griditem">item 4</div>
+    <div class="griditem">item 5</div>
+   </div>
+</body>
+</html>

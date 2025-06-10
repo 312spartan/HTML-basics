@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            background-color: slategray;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+            /* grid-template-rows: 100px 100px; */
+            /* justify-items: center; */
+            /* align-items: center; */
+            /* place-items: center; */
+        }
+
+        .item {
+            background-color: crimson;
+            color: white;
+            padding: 10px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            margin: 5px;
+
+        }
+        .item:nth-child(1){
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+</body>
+</html>
